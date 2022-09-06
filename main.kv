@@ -1,0 +1,22 @@
+<Start_page>
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        padding: 30
+        spacing: 30
+
+        Image:
+            id: img
+            size_hint: (.7, .7)
+            pos_hint:{'center_x': .5}
+            angle: 0
+            source:'FingerBang.psd'
+
+        Button:
+            id: btn
+
+            size_hint: (.3, .2)
+            pos_hint:{'center_x': .5}
+            background_normal: 'background_normal.png'
+            background_down:
+            on_press: Start_page
